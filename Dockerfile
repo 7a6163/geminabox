@@ -7,6 +7,7 @@ WORKDIR /app
 ADD Gemfile* ./
 RUN bundle install
 
+
 FROM ruby:2.7-alpine
 LABEL maintainer="Zac"
 
