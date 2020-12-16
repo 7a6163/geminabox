@@ -14,8 +14,9 @@ WORKDIR /app
 COPY --from=Builder /usr/local/bundle/ /usr/local/bundle/
 COPY Gemfile* config.ru ./
 
-ENV BASIC_USER="" \
-    BASIC_PASS=""
+ENV BASIC_USER=""
+ENV BASIC_PASS=""
+ENV RACK_ENV="production"
 
 EXPOSE 9292
 
