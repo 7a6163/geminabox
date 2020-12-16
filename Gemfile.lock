@@ -16,6 +16,9 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nesty (1.0.2)
+    nio4r (2.5.4)
+    puma (5.1.1)
+      nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.8.1)
       rack
@@ -27,14 +30,14 @@ GEM
       rack-protection (= 2.0.8.1)
       tilt (~> 2.0)
     tilt (2.0.10)
-    webrick (1.7.0)
 
 PLATFORMS
   ruby
+  x86_64-linux-musl
 
 DEPENDENCIES
   geminabox (~> 1.2.0)
-  webrick (~> 1.7.0)
+  puma (~> 5.0)
 
 BUNDLED WITH
    2.2.1
