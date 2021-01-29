@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   geminabox:
-    image: ttksm/geminabox:latest
+    image: 7a6163/geminabox:latest
     container_name: geminabox
     environment:
       BASIC_USER: username

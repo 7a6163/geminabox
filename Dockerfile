@@ -1,10 +1,10 @@
 FROM ruby:2.7-alpine AS Builder
 
-RUN apk add --no-cache build-base
-RUN gem install bundler
+RUN apk add --no-cache build-base=0.5-r2
+RUN gem install bundler:2.2.6
 
 WORKDIR /app
-ADD Gemfile* ./
+COPY Gemfile* ./
 RUN bundle install
 
 

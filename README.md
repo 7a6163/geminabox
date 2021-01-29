@@ -13,7 +13,7 @@ This docker image include Geminabox on runtime of the official [ruby:2.7-alpine]
 Do mapping local port to listening 9292 port on the container, which activate geminabox.
 In order to open local port 8080 up to container, docker run command as follows.
 ```bash
-docker run -d -p 8080:9292 ttksm/geminabox:latest
+docker run -d -p 8080:9292 7a6163/geminabox:latest
 ```
 After executing the command, you can browse geminabox where http://localhost:8080.
 <br>
@@ -37,7 +37,7 @@ password for basic authentication.
 <br>
 Docker run command as follows.
 ```bash
-docker run -d -p 8080:9292 -e BASIC_USER=username -e BASIC_PASS=password ttksm/geminabox:latest
+docker run -d -p 8080:9292 -e BASIC_USER=username -e BASIC_PASS=password 7a6163/geminabox:latest
 ```
 And in order to enabling auto authentication when you install gems on cli, you should run the command.
 ```bash
@@ -51,7 +51,7 @@ Gems are stored on the directory `/var/geminabox-data` on the geminabox containe
 So, mount a directory on the host or a docker volume to `/var/geminabox-data`, gems persists.
 For example, mount current directory,
 ```bash
-docker run -d -p 8080:9292 --mount type=bind,src=$PWD,dst=/var/geminabox-data ttksm/geminabox:latest
+docker run -d -p 8080:9292 --mount type=bind,src=$PWD,dst=/var/geminabox-data 7a6163/geminabox:latest
 ```
 
 ### docker-compose.yml
@@ -61,7 +61,7 @@ version: '3.7'
 
 services:
   geminabox:
-    image: ttksm/geminabox:latest
+    image: 7a6163/geminabox:latest
     container_name: geminabox
     environment:
       - BASIC_USER=username
