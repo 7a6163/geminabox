@@ -40,4 +40,8 @@ DEPENDENCIES
   puma (~> 5.0)
 
 BUNDLED WITH
+<<<<<<< HEAD
    2.2.13
+=======
+   2.2.7
+>>>>>>> b45e0815fa5cc5363cbb92b958ce43e851403ea1
