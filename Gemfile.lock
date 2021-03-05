@@ -16,8 +16,8 @@ GEM
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nesty (1.0.2)
-    nio4r (2.5.4)
-    puma (5.2.0)
+    nio4r (2.5.7)
+    puma (5.2.2)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.0.8.1)
@@ -40,4 +40,4 @@ DEPENDENCIES
   puma (~> 5.0)
 
 BUNDLED WITH
-   2.2.6
+   2.2.13
